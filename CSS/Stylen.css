@@ -1,93 +1,53 @@
-body {
-    font-family: 'Poppins', sans-serif;
-}
+/* styles.css */
 
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
 }
 
-.header {
-    background-image: linear-gradient(rgba(201, 186, 186, 0.7), rgba(209, 200, 200, 0.7)), url(../IMAGEN/Imagen1.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 70vh;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    align-items: center;
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
     text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
-.menu {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 20px;
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    color: #070707;
-    font-size: 25px;
-    font-weight: 800;
+h1, h2, h3 {
+    color: #333;
 }
 
-.menu .navbar ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.menu .navbar ul li {
-    position:static;
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
-.menu .navbar ul li a {
-    font-size: 20px;
-    padding: 35px;
-    color: #181717;
-    display: block;
-    font-weight: 600;
+li:last-child {
+    border-bottom: none;
 }
 
-.menu .navbar ul li a:hover {
-    color: #ce697b;
-}
-
-#menu {
-    display: none;
-}
-
-.menu-icono {
-    width: 25px;
-}
-
-.menu label {
-    cursor: pointer;
-    display: none;
-}
-
-.boton1 {
-    display: inline-block;
-    padding: 10px 30px;
-    background-color: #CE367B;
-    color: #F9FAFC;
-    text-transform: uppercase;
-}
-
-.boton1:hover {
-    background-color: #ce697b;
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    color: #666;
 }
