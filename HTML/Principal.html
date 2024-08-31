@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Hoja de Vida</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../CSS/Stylen.css">
 </head>
-
 <BODy>
     <!-- 1parte -->
     <section id="inicio">
@@ -17,25 +18,88 @@
                     <h1>DIVA TOVAR</h1>
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                            <li><a href="#sobremi"></a>SOBRE MI</li>
-                            <li><a href="#servicios"></a>SERVICIOS</li>
-                            <li><a href="#portafolio"></a>PORTAFOLIO</li>
-                            <li><a href="#contacto"></a>CONTACTO</li>
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">EDUCACION</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
             </header>
             <div class="presentacion">
-                <p class="bienvenida">BIENVENIDOS</p>
-                <h2>Soy <span>Diva Vargas Tovar</span>Estudiante Ingenieria de Sistemas</h2>
-                <p class="descripcion">Estudiante de la Universidad de la Amazonia(UDLA), naci en Florencia-Caqueta -Colombia, 
-                    tengo sangre Opita, tengo 23 años, soy una persona muy amable y me gusta el deporte
-                </p>
-                <a href="#portfolio">Ir a Portafolio</a>
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Diva Vargas Tovar</span>, Estudiante de Ingenieria de Sistemas</h2>
+                <p class="descripcion">Soy de la ciudad de Florencia, Caqueta, Colombia. </p>
+                <!-- <a href="#portfolio">Ir a Portafolio</a>-->
             </div>
         </div>
     </section>
+
+      <!-- 2parte -->
+      <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="../IMAGEN/foto.JPG" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Diva Vargas Tovar</span> </h2>
+            <h3>Estudiante de Ingenieria de Sistemas</h3>
+            <p>Soy estudiante de la Universidad de la Amazonia (UDLA), graduada como 
+                normalista en el 2018, con tecnico en sistemas en el SENA, tengo 23 años</p>
+            <p>Trabaje en un colegio llamado Jorge Isaacs, ESQALA y UT CORPOPREDIAL</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--Habilidades-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Trabajo en Equipo</p>
+                <span class="porcentaje">95%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Responsabilidad</p>
+                <span class="porcentaje">100%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Comunicacion Efectiva</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Memoria</p>
+                <span class="porcentaje">75%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
 </BODy>
 
 </html>
